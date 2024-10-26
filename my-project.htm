@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+     body{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .container{
+        height: 800px;
+        width: 910px;
+        background-color: white;
+        border: none;
+     }
+     ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        font-size: 15px;
+        border: none;
+     }
+
+     .sneakers{
+        font-size: 25px;
+     }
+     form{
+        display: flex;
+        justify-content: flex-end;
+    
+     }
+     .icons{
+        position: relative;
+        padding-left: 450px;
+     }
+.control{
+        display: flex;
+        margin: 50px;
+     }
+ .image-container{
+        height: 500px;
+        width: 400px;
+        background-color: white;
+        text-align: center;
+     }
+ .text-container{
+        height: 400px;
+        width: 2800px;
+        background-color: white;
+        margin-top: 100px;
+        /* text-align: center; */
+     }
+ .main-image{
+    align-items: center;
+    padding: 10px;
+    margin: 30px;
+    height: 390px;
+    width: 350px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    display: grid;
+}
+h2{
+    color:rgb(92, 86, 86);
+}
+.thumbnail{
+    border-radius: 10px;
+    background-color: white;
+}
+ .image-box{
+    background-color: white;
+ }
+h2{
+     font-size: 12px;
+     color:  rgb(92, 86, 86);
+ }
+ H1{
+     font-size: 40px;
+ }
+ p{
+     font-size: 12px;
+     color: rgb(92, 86, 86);
+ }
+ h3{
+     font-size: 20px;
+ }
+ .btn{
+    background-color: black;
+     /* width: 40px; */
+     color: white;
+     border-radius: 5px;
+ }
+ h4{
+     font-size: 10px;
+     text-decoration: line-through;
+     color:  rgb(92, 86, 86);
+ }
+ button{
+     background-color: rgb(245, 235, 235);
+     border-radius: 15px;
+     
+ }
+ .Add-btn{
+     background-color: rgb(174, 108, 9);
+     height: 35px;
+     width: 170px;
+     border-radius: 10px;
+     color: black;
+     font-weight: bold;
+     
+ }
+ 
+ .plus-btn{
+     background-color: rgba(253, 243, 243, 0.752);
+     width: 30px;
+     height: 30px;
+     border-radius: 5px;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+     font-weight: bold;
+     color: rgb(174, 108, 9);
+     border: none;
+ }
+ @media (max-width:300px ) {
+     header {
+         margin-top: -30px;
+         justify-content: center;
+     }
+     .container{
+        padding: -600px;
+        height: 300px;
+        max-width: -200px;
+        display: grid;
+        justify-content: space-evenly;
+     }
+     .control{
+        max-width: -700px;
+     }
+     img {
+        display: block;
+        max-width: 100%;
+        
+     }
+ }        
+ 
+    
+</style>
+<body>
+    <div class="container">
+        <header class="header" id="header">
+            <ul>
+                <li><a href="sneakers" class="sneakers">Sneakers</a></li>
+                <li><a href="collection">Collection</a></li>
+                <li><a href="men">Men</a></li>
+                <li><a href="women">Women</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </header>
+        
+        <form class="icons">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </form>
+        <div class="control">
+            <div class="image-container">
+                <img src="sneakers.jpg" alt="Main Sneakers" class="main-image" id="displayedImage">
+        <h2 class="image-box">
+                    <img src="sneakers.jpg" alt="Sneakers" width="80px" height="80px" class="thumbnail" onclick="changeImage('sneakers.jpg')">
+                    <img src="sneakers3.jpg" alt="Sneakers 3" width="80px" height="80px" class="thumbnail" onclick="changeImage('sneakers3.jpg')">
+                    <img src="sneakers4.jpg" alt="Sneakers 4" width="80px" height="80px" class="thumbnail" onclick="changeImage('sneakers4.jpg')">
+                    <img src="sneakers5.jpg" alt="Sneakers 5" width="80px" height="80px" class="thumbnail" onclick="changeImage('sneakers5.jpg')">
+        </h2>
+    </div>
+            <div class="text-container">
+                <h2><small>SNEAKER COMPANY</small></h2>
+                <H1><b>Full Limited Edition Sneakers</b></H1>
+                <br>
+                <p>The low-profile sneakers are your perfect casual wear <br>companion featuring a durable rubber outer sole. They'll <br>
+                     withstand everything the weather can offer.
+                <br>
+                <br>
+                <h3>$125.00 <button class="btn">50%</button></h3>
+                <h4>$250.00</h4>
+                <br>
+                <button class="plus-btn">-</button>
+                <button class="plus-btn">0</button>
+                <button class="plus-btn">+</button>
+                <button class="Add-btn"><b><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</b></button>
+        </div>
+
+    </div>
+</body>
+<script src="Index.js"></script>
+</html>
